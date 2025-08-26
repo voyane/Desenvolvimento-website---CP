@@ -1,0 +1,318 @@
+@font-face {
+    font-family: "gladies";
+    src: url("../fonts/gladies-regular.ttf") format("truetype");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.hero{
+    position: relative;
+    top: 30;
+    padding: 40px 20px;
+    text-align: center;
+}
+.hero-header a{
+    color: #fff;
+    font-family: "gladies", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 30px;
+    transition: color 0.3s ease;
+}
+.hero-header a:hover{
+    color: rgb(187, 131, 19);;
+}
+
+.hero-header a img{
+    width: 25% !important;
+}
+.content-img{
+    position: relative;
+    text-align: center;
+    margin: 50px;
+}
+.content h1{
+    color: rgb(187, 131, 19);
+    font-family: "gladies", sans-serif;
+    font-size: 5rem;
+}
+.content h2{
+    color: rgb(187, 131, 19);
+    font-size: 3rem;
+    font-family: "gladies", sans-serif;
+}
+.content p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 30px;
+    line-height: 1.8;
+}
+.img-decor img{
+    width: 100%;
+    border-radius: 20px;
+}
+.slider-carousel{
+    position: relative;
+    text-align: center;
+}
+.content h2{
+    font-size: 3rem;
+}
+.carousel{
+    position: relative;
+    width: 1200px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0, 0.6);
+}
+.carousel-track{
+    display: flex;
+    width: 100%;
+    animation: slide 6s infinite;
+}
+.carousel-item{
+    flex-shrink: 0;
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+  @keyframes slide {
+      0%   { transform: translateX(0%); }
+      25%  { transform: translateX(0%); }
+
+      35%  { transform: translateX(-100%); }
+      60%  { transform: translateX(-100%); }
+
+      70%  { transform: translateX(-200%); }
+      95%  { transform: translateX(-200%); }
+
+      100% { transform: translateX(0%); }
+    }
+    .image-text{
+        display: flex;
+        gap: 20px;
+        max-width: 1200px;
+        margin: 50px 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .image-img img{
+        border-radius: 20px;
+        width: 600px;
+        height: auto;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.6);
+    }
+    .text-text h3{
+        font-size: 2rem;
+        color: rgb(187, 131, 19);
+        font-family: "gladies", sans-serif;
+    }
+    .text-text p{
+        font-size: 1.2rem;
+        color: #fff;
+        line-height: 1.8;
+        padding: 0 40px;
+    }
+    .third-section{
+   background-image: url('../imagens/decoracao-1.png');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.container-third{  /*formulário*/
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 20px;
+    max-height: 100%;
+   backdrop-filter: blur(5px);
+   margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .form button {
+    width: 100%;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.header-container{
+    padding: 20px;
+    text-align: center;
+    color: rgb(187, 131, 19);
+    font-size: 2rem;
+}
+
+.header-container p{
+    font-size: 1.8rem;
+    color: black;
+}
+.form{
+    padding: 20px;
+}
+.form-group{
+    margin-bottom: 20px;
+    position: relative;  
+}
+.form-group label{
+    display: inline-block;
+    margin: 10px;
+    font-weight: bold;
+    color: #000;
+}
+.form-group input{
+    display: block;
+    border: 2px solid #f0f0f0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+}
+.form-group i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-group small{
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.form button{
+    background-color:  rgb(187, 131, 19) ;
+    border: 2px solid  rgb(187, 131, 19);
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background: rgb(150, 105, 15);
+  transform: scale(1.02);
+}
+
+/* Responsividade básica */
+
+@media (max-width: 720px) {
+  .hero-middle h1 {
+    font-size: 2.5rem;
+  }
+  .hero-middle h2 {
+    font-size: 1.5rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+  }
+  .image-text {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-section img {
+    max-width: 100%;
+  }
+  .text-section h3 {
+    font-size: 1.5rem;
+  }
+}
+.tranding{
+  background-color: #000; /* fundo escuro */
+  padding: 50px 0;
+  overflow: hidden;
+  text-align: center;
+  font-family: "gladies", sans-serif;
+}
+
+.tranding-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tranding-track {
+  display: flex;
+  gap: 60px; /* espaçamento entre as imagens */
+  transition: transform 0.5s ease;
+}
+
+.tranding-item {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.tranding-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tranding-item:hover {
+  transform: scale(1.05);
+}
+.custom-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+.footer-top-images img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.footer-menu a {
+  color: rgb(187, 131, 19);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  font-family: "Georgia", sans-serif;
+}
+.footer-menu {
+  margin: 30px 0;
+}
+.footer-logo img {
+  height: 80px;
+}
+.footer-social a {
+  margin: 0 8px;
+  color: white;
+  font-size: 20px;
+}
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ccc;
+}

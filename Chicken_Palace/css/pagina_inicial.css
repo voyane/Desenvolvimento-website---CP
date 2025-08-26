@@ -1,0 +1,323 @@
+@font-face {
+    font-family: "gladies";
+    src: url("../fonts/gladies-regular.ttf") format("truetype");
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.body{
+    overflow-x: hidden;
+    background-color: #000;
+}
+.hero{
+    position: relative;
+    background-image: url("../imagens/home-1.jpg") ;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 40px 20px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "gladies", sans-serif;
+}
+.hero-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 450px;
+}
+.hero-header a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 0 30px;
+}
+.hero-header a:hover{
+    color: rgb(187, 131, 19);
+}
+.logo{
+    max-width: 150px;
+    height: auto;
+}
+.hero-middle h1{
+    color: white;
+    font-family: "Georgia", sans-serif;
+    font-size: 2.2rem;
+    margin-top: 20px;
+}
+    
+.hero-links{
+    color: white;
+    font-weight: bold;
+    margin: 30px 0;
+}
+.hero-links a{
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: 0.3s;
+    font-family: "gladies", sans-serif;
+
+}
+.hero-links a:hover {
+    color: rgb(187, 131, 19);
+}
+.btn{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-family: "gladies", sans-serif;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+.btn:hover{
+     color: rgb(187, 131, 19);
+     border-color: rgb(187, 131, 19);
+}
+@media (max-width: 768px) {
+    .hero-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-middle h1 {
+        font-size: 1.6rem;
+    }
+
+    .hero-links a {
+        font-size: 1.2rem;
+    }
+  }
+
+.container{
+    background-image: url("../imagens/logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+
+.menu {
+    position: relative;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+.menu span{
+    color: #fff;
+}
+.menu a {
+  color: white;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "gladies", sans-serif;
+  transition: 1s;
+}
+.menu a:hover{
+    color: rgb(187, 131, 19);
+}
+
+/* carrossel */
+.carousel {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.card {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: carousel 15s linear infinite;
+  opacity: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* delays de cada card */
+.card:nth-child(1) { animation-delay: -3s; }
+.card:nth-child(2) { animation-delay: 0s; }
+.card:nth-child(3) { animation-delay: 3s; }
+.card:nth-child(4) { animation-delay: 6s; }
+.card:nth-child(5) { animation-delay: 9s; }
+
+/* animação */
+@keyframes carousel {
+  0% {
+    transform: translateY(60%) scale(0.7);
+    opacity: 0;
+  }
+  10%, 20% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  30%, 40% {
+    transform: translateY(-60%) scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(60%) scale(0.7);
+    opacity: 0;
+  }
+}
+.image-text-overlay {
+    position: relative;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    max-width: 1200px;
+    aspect-ratio: 2 / 1;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    height: auto;
+    max-width: 35%;
+}
+
+.overlay-text h1 {
+    font-family: "gladies", sans-serif;
+    font-size: 5rem;
+    color: rgb(187, 131, 19);
+    margin-bottom: 50px;
+    line-height: 1.3;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.icons div {
+    text-align: center;
+}
+
+.icons img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.icons img:hover{
+    transform: scale(1.1);
+}
+.icons a p{
+    color: #000;
+    font-weight: bold;
+    font-family: "gladies", sans-serif;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.icons a p:hover{
+    transform: scale(1.05);
+    color: rgb(187, 131, 19);
+    border-color: rgb(187, 131, 19);
+}
+@media (max-width: 768px) {
+    .overlay-text {
+        padding: 25px 30px;
+        max-width: 90%;
+    }
+
+    .overlay-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .icons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icons p {
+        font-size: 0.9rem;
+    }
+}
+.custom-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+.footer-top-images img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin: 0 15px;
+}
+.footer-menu a {
+  color: rgb(187, 131, 19);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 2px 20px;
+  border: 2px solid;
+  border-radius: 20px;
+  font-family: "Georgia", sans-serif;
+}
+.footer-menu {
+  margin: 30px 0;
+}
+.footer-logo img {
+  height: 80px;
+}
+.footer-social a {
+  margin: 0 8px;
+  color: white;
+  font-size: 20px;
+}
+.footer-bottom {
+  margin-top: 30px;
+  font-size: 12px;
+  color: #ccc;
+}
