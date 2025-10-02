@@ -3,7 +3,7 @@
     src: url("../fonts/gladies-regular.ttf") format("truetype");
 }
 
-/* Reset e base */
+
 * {
     box-sizing: border-box;
     margin: 0;
