@@ -1,97 +1,176 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Aluguer</title>
-  <link rel="stylesheet" href="aluguer.css">
+  <link rel="stylesheet" href="./css/aluguer.css" />
 </head>
 <body>
-
-  <!-- MENU TOGGLE MOBILE -->
-  <div class="menu-toggle">☰</div>
-
-  <!-- HERO SECTION -->
-  <div class="hero">
+  <section class="hero">
     <div class="hero-header">
-      <a href="#">Início</a>
-      <a href="#">Sobre</a>
-      <a href="#">Serviços</a>
-      <a href="#">Contato</a>
+      <a href="sobre_nos.html">Sobre Nós</a>
+      <a href="pagina_inicial.html">
+        <img class="logo" src="./imagens/logo.png" alt="Chicken Palace" />
+      </a>
+      <a href="menu.html">Menú</a>
     </div>
-
     <div class="hero-middle">
-      <img src="imagens/logo.png" alt="Logo" class="logo">
-      <h1>Serviço de Aluguer</h1>
-      <h2>Facilitando sua vida com qualidade</h2>
+      <h1>Aluguer</h1>
+      <h2>Realize a Beleza do Seu Evento</h2>
+      <p>
+        Eventos comuns têm plateia, os inesquecíveis têm aplausos! <br />
+        Quando tudo funciona com precisão, o ambiente transmite excelência.
+      </p>
     </div>
-  </div>
-
-  <!-- SLIDER PRINCIPAL (SEM BULLETS) -->
-  <div class="slider">
-    <div class="slides" id="slides">
-      <div class="slide"><img src="imagens/img1.jpg" alt="Slide 1"></div>
-      <div class="slide"><img src="imagens/img2.jpg" alt="Slide 2"></div>
-      <div class="slide"><img src="imagens/img3.jpg" alt="Slide 3"></div>
-      <div class="slide"><img src="imagens/img4.jpg" alt="Slide 4"></div>
-      <div class="slide"><img src="imagens/img5.jpg" alt="Slide 5"></div>
+    <div>
+      <img class="middle-image" src="./imagens/decoracao-2.png" alt="Aluguer" />
     </div>
-  </div>
+  </section>
+  <section id="slider">
+        <div class="container-section">
+            <span>Aluguer</span>
+            <h2>Invista em uma estrutura que fale por si</h2>
+            <p>
+                Nada fala mais alto do que a perfeição nos bastidores. <br />
+                Cada cadeira no lugar certo, cada luz na intensidade exata, cada detalhe pensado para impressionar sem esforço.
+            </p>
+        </div>
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <input type="radio" name="slider" id="slide5">
 
-  <!-- TRENDING CAROUSEL (ESTÁTICO) -->
-  <div class="tranding-carousel">
-    <h2>Mais Procurados</h2>
-    <div class="carousel-track">
-      <div class="carousel-item"><img src="imagens/car1.jpg" alt=""></div>
-      <div class="carousel-item"><img src="imagens/car2.jpg" alt=""></div>
-      <div class="carousel-item"><img src="imagens/car3.jpg" alt=""></div>
-      <div class="carousel-item"><img src="imagens/car4.jpg" alt=""></div>
+        <div id="slides">
+            <div class="slide"><img src="imagens/aluguer-001.JPG" alt=""></div>
+            <div class="slide"><img src="imagens/aluguer-002.png" alt=""></div>
+            <div class="slide"><img src="imagens/aluguer-003.png" alt=""></div>
+            <div class="slide"><img src="imagens/aluguer-004.png" alt=""></div>
+            <div class="slide"><img src="imagens/aluguer-005.png" alt=""></div>
+        </div>
+
+        <!-- Bullets -->
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+        </div>
+  </section>
+
+  <section class="image-text">
+    <div class="image-section">
+      <img src="./imagens/testemunho-1.jpg" alt="Cliente Feliz" />
     </div>
-  </div>
+    <div class="text-section">
+      <h3>Os Nossos Clientes Felizes</h3>
+      <p>
+        "Contamos com uma equipa criativa, dinâmica e profissional <br/> para tratar cada projecto de uma forma personalizada pensando em cada detalhe."<br /><br />
+        Amanda & Jethro
+      </p>
+    </div>
+  </section>
+ <section class="third-section">
+            <div class="container-third">
+                <div class="header-container">
+                    <h1>Fale Connosco</h1>
+                    <p>Já viu de tudo, <br/>que tal pedir um orçamento!</p>
+                </div>
+                <form action="" method="" id="form" class="form">
+                    <div class="form-group">
+                        <label for="username">Nome do Cliente</label>
+                        <input type="text" id="username" placeholder="Digite seu nome" aria-describedby="helpId"/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email" placeholder="Digite seu e-mail."/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contacto</label>
+                        <input type="tel" id="contact" placeholder="Digite seu contacto"/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="event-type">Tipo de Evento</label>
+                        <input type="text" id="event-type" placeholder="Digite o tipo de evento"/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="number-guest">Número de Convidados</label>
+                        <input type="number" id="number-guest" placeholder="Digite o número de convidados"/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-event">Data do Evento</label>
+                        <input type="date" id="date-event" placeholder="Digite a data"/>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <small>Mensagem de erro</small>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+        <section class="tranding-carousel">
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <a href="#">
+                        <img src="./imagens/tranding-food-1.png" alt="Comida">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                        <img src="./imagens/decoracao-1.png" alt="Decoração">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="#">
+                        <img src="./imagens/aluguer-1.png" alt="Som">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="custom-footer">
+            <div class="footer-menu">
+                <a href="pagina_inicial.html">PÁGINA INICIAL</a>
+                <a href="sobre_nos.html">SOBRE NÓS</a>
+                <a href="catering.html">CATERING</a>
+                <a href="decoracao.html">DECORAÇÃO</a>
+                <a href="aluguer.html">ALUGUER</a>
+                <a href="contactus.html">CONTACTO</a>
+            </div>
 
-  <!-- FORMULÁRIO -->
-  <div class="form-container">
-    <form id="form">
-      <div class="input-control">
-        <label for="username">Nome</label>
-        <input id="username" name="username" type="text">
-        <small>Erro</small>
-      </div>
+            <div class="footer-logo">
+                <img src="imagens/logo.png" alt="Chicken Palace Logo">
+               <!--<p class="slogan">perfeição sem igual</p>--> 
+            </div>
 
-      <div class="input-control">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email">
-        <small>Erro</small>
-      </div>
+            <div class="footer-social">
+                <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                <a href="https:twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
 
-      <div class="input-control">
-        <label for="contact">Contacto</label>
-        <input id="contact" name="contact" type="text">
-        <small>Erro</small>
-      </div>
-
-      <div class="input-control">
-        <label for="event-type">Tipo de Evento</label>
-        <input id="event-type" name="event-type" type="text">
-        <small>Erro</small>
-      </div>
-
-      <div class="input-control">
-        <label for="number-guest">Número de Convidados</label>
-        <input id="number-guest" name="number-guest" type="number">
-        <small>Erro</small>
-      </div>
-
-      <div class="input-control">
-        <label for="date-event">Data do Evento</label>
-        <input id="date-event" name="date-event" type="date">
-        <small>Erro</small>
-      </div>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-
-  <script src="aluguer.js"></script>
+            <div class="footer-bottom">
+                <p>Copyright © Voyane Rogério</p>
+                <span>🌐 Português</span>
+            </div>
+    </footer>
 </body>
 </html>
